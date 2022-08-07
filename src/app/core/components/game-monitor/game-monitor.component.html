@@ -1,0 +1,7 @@
+<div class="monitor-container margin-top-2">
+    <input type="checkbox" [(ngModel)]="showVerboseMessages">Show verbose messages
+    <ng-container *ngFor="let m of messages.slice().reverse()"><p>{{m.message}}</p></ng-container>
+    
+</div>
+
+

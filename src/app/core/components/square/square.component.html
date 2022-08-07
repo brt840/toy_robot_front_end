@@ -1,0 +1,7 @@
+<div class="square" 
+    [class.north]="orientationCheck('NORTH')"
+    [class.east]="orientationCheck('EAST')"
+    [class.west]="orientationCheck('WEST')"
+    [class.south]="orientationCheck('SOUTH')">
+    <h1 class="x" *ngIf="selected">X</h1>
+</div>

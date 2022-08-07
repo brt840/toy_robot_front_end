@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h1>Toy Robot</h1> 
+<div class="row">
+  <div class="col-md-8">
+    <ng-container *ngFor="let rows of table; let i = index;">
+      <div class="row row-margin-top">
+        <div class="col-md" *ngFor="let col of rows; let j = index">
+          <square [orientation]="currentOrientation" [selected]="isSelectedSquare(i, j)"></square>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="col-md-4">
+    <game-shell (onActionPerformed)="onActionPerformed($event)"></game-shell>
+    <game-console (onActionPerformed)="onActionPerformed($event)"></game-console>
+    <game-monitor></game-monitor>
+  </div>
+</div>
+  
+</div>

@@ -1,0 +1,26 @@
+.square {
+    width: 7em;
+    height: 7em;
+    border: 1px solid black;
+}
+
+.x {
+    text-align: center;
+    margin-top: 0.7em;
+}
+
+.north {
+    border-top: 3px solid green;
+}
+
+.east {
+    border-right: 3px solid green;
+}
+
+.south {
+    border-bottom: 3px solid green;
+}
+
+.west {
+    border-left: 3px solid green;
+}
