@@ -31,13 +31,13 @@ export class GameUtilsService {
             return { isActionValid: false }
           }
         case Constants.orientation.EAST:
-          if(currentColumn < GameSettings.grid.columns) {
+          if(currentColumn < GameSettings.grid.columns -1) {
             return {isActionValid: true, row: currentRow, column: currentColumn + 1, orientation: Constants.orientation.EAST, actionPerformed: action};
           }else {
             return { isActionValid: false }
           }
         case Constants.orientation.SOUTH:
-          if(currentRow < GameSettings.grid.rows) {
+          if(currentRow < GameSettings.grid.rows - 1) {
             return {isActionValid: true, row: currentRow + 1, column: currentColumn , orientation: Constants.orientation.SOUTH, actionPerformed: action};
           }else {
             return { isActionValid: false }
